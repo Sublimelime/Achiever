@@ -7,5 +7,5 @@
     "homepage": "https://bitbucket.com/Gangsir/achiever",
     "factorio_version": "0.15",
     "dependencies": ["base >= 0.15"],
-    "description": "Adds many more achievements for players that feel there aren't enough. Includes global, per force, and per player achievements."
+    "description": "Adds many more achievements for players that feel there aren't enough. Includes global, per force, and per player achievements that are a bit more interesting."
 }
