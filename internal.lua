@@ -48,4 +48,36 @@ data:extend{
 		to_build = "arithmetic-combinator",
 		icon = "__Achiever__/graphics/placeholder.png"
 	},
+	{
+		type = "build-entity-achievement",
+		name = "atom-smashing",
+		order = "g",
+		to_build = "nuclear-reactor",
+		icon = "__Achiever__/graphics/placeholder.png"
+	},
+	{
+		type = "build-entity-achievement",
+		name = "accumulating",
+		order = "i",
+		to_build = "accumulator",
+		icon = "__Achiever__/graphics/placeholder.png"
+	},
+	{
+		type = "research-achievement",
+		name = "efficient-miner",
+		order = "h",
+		technology = "mining-productivity-16",
+		icon = "__Achiever__/graphics/placeholder.png"
+	},
+}
+
+data:extend{
+	{
+		type = "finish-the-game-achievement",
+		name = "a-brisk-walk",
+	until_second = 3600 * 30, --30 hours
+	allowed_in_peaceful_mode = false,
+	order = "k",
+	icon = "__Achiever__/graphics/placeholder.png",
+},
 }

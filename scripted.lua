@@ -5,4 +5,28 @@ data:extend{
 		order = "g",
 		icon = "__Achiever__/graphics/placeholder.png"
 	},
+	{
+		type = "achievement",
+		name = "tango-down",
+		order = "h",
+		icon = "__Achiever__/graphics/placeholder.png"
+	},
+	{
+		type = "achievement",
+		name = "looted",
+		order = "i",
+		icon = "__Achiever__/graphics/placeholder.png"
+	},
+	{
+		type = "achievement",
+		name = "copy-and-pasted",
+		order = "j",
+		icon = "__Achiever__/graphics/placeholder.png"
+	},
+	{
+		type = "achievement",
+		name = "depleted",
+		order = "l",
+		icon = "__Achiever__/graphics/placeholder.png"
+	},
 }
