@@ -41,4 +41,10 @@ data:extend{
 		order = "n",
 		icon = "__Achiever__/graphics/placeholder.png"
 	},
+	{
+		type = "achievement",
+		name = "fully-automatic",
+		order = "o",
+		icon = "__Achiever__/graphics/placeholder.png"
+	},
 }

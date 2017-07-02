@@ -19,6 +19,8 @@ function treeDestroyed(e)
 		end
 	end
 end
+script.on_event(defines.events.on_player_mined_entity, treeDestroyed)
+script.on_event(defines.events.on_robot_pre_mined, treeDestroyed)
 
 function onEntityDied(e)
 	local entity = e.entity
@@ -41,9 +43,6 @@ function onEntityDied(e)
 	end
 end
 script.on_event(defines.events.on_entity_died, onEntityDied)
-
-script.on_event(defines.events.on_player_mined_entity, treeDestroyed)
-script.on_event(defines.events.on_robot_pre_mined, treeDestroyed)
 
 function onBlueprint(e)
 	local player = game.players[e.player_index]
@@ -75,3 +74,10 @@ function onConsoleChat(e)
 	player.unlock_achievement("hello-world")
 end
 script.on_event(defines.events.on_console_chat, onConsoleChat)
+
+function onPlayerCrafted(e)
+	if e.item_stack.name == "submachine-gun" then
+		game.players[e.player_index].unlock_achievement("fully-automatic")
+	end
+end
+script.on_event(defines.events.on_player_crafted_item, onPlayerCrafted)
