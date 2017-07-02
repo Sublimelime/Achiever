@@ -29,4 +29,16 @@ data:extend{
 		order = "l",
 		icon = "__Achiever__/graphics/placeholder.png"
 	},
+	{
+		type = "achievement",
+		name = "hello-world",
+		order = "m",
+		icon = "__Achiever__/graphics/placeholder.png"
+	},
+	{
+		type = "achievement",
+		name = "deforestation",
+		order = "n",
+		icon = "__Achiever__/graphics/placeholder.png"
+	},
 }

@@ -75,9 +75,17 @@ data:extend{
 	{
 		type = "finish-the-game-achievement",
 		name = "a-brisk-walk",
-	until_second = 3600 * 30, --30 hours
-	allowed_in_peaceful_mode = false,
-	order = "k",
-	icon = "__Achiever__/graphics/placeholder.png",
-},
+		until_second = 3600 * 24, --24 hours
+		allowed_in_peaceful_mode = false,
+		order = "k",
+		icon = "__Achiever__/graphics/placeholder.png",
+	},
+	{
+		type = "build-entity-achievement",
+		name = "on-the-road-again",
+		order = "r",
+		to_build = "car",
+		icon = "__Achiever__/graphics/placeholder.png",
+	},
+
 }
