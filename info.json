@@ -6,6 +6,6 @@
     "contact": "The best way to reach me is to PM me on Reddit, at /u/Gangsir. If you need to submit an issue with the mod, please do so on the bitbucket repository.",
     "homepage": "https://bitbucket.com/Gangsir/achiever",
     "factorio_version": "0.15",
-    "dependencies": ["base >= 0.15.26"],
+    "dependencies": ["base >= 0.15.27"],
     "description": "Adds many more achievements for players that feel there aren't enough. Includes global, per force, and per player achievements that are a bit more interesting."
 }

@@ -94,22 +94,8 @@ end
 script.on_event(defines.events.on_player_crafted_item, onPlayerCrafted)
 
 function onPlaced(e)
-	if e.created_entity.name == "lamp" then
-		global.lamps_placed = global.lamps_placed + 1
-		if global.lamps_placed >= 200 then
-			for index, player in pairs(game.players) do
-				player.unlock_achievement("let-there-be-light")
-			end
-		end
-	elseif e.created_entity.type == "entity-ghost" then
+	if e.created_entity.type == "entity-ghost" and game.players[e.player_index] then
 		game.players[e.player_index].unlock_achievement("ghosted")
-	elseif e.created_entity.name == "solar-panel" then
-		global.solar_panels_placed = global.solar_panels_placed + 1
-		if global.solar_panels_placed >= 200 then
-			for index, player in pairs(game.players) do
-				player.unlock_achievement("praise-the-sun")
-			end
-		end
 	end
 end
 script.on_event(defines.events.on_built_entity, onPlaced)
@@ -135,3 +121,19 @@ function onRocketLaunched(event)
 	end
 end
 script.on_event(defines.events.on_rocket_launched, onRocketLaunched)
+
+function onTick(e)
+	if e.tick % 8000 then
+		if game.surfaces[1].count_entities_filtered{name = "small-lamp"} >= 200 then
+			for index, player in pairs(game.players) do
+				player.unlock_achievement("let-there-be-light")
+			end
+		end
+		if game.surfaces[1].count_entities_filtered{name = "solar-panel"} >= 10000 then
+			for index, player in pairs(game.players) do
+				player.unlock_achievement("praise-the-sun")
+			end
+		end
+	end
+end
+script.on_event(defines.events.on_tick, onTick)

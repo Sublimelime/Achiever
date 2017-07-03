@@ -119,6 +119,6 @@ data:extend{
 		in_vehicle = true,
 		personally = true,
 		amount = 500,
-		icon = "__Achiever__/graphics/bulldozed.png",
+		icon = "__base__/graphics/achievement/run-forrest-run.png"
 	},
 }
