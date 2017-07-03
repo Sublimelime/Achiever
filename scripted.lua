@@ -47,4 +47,34 @@ data:extend{
 		order = "o",
 		icon = "__Achiever__/graphics/fully-automatic.png"
 	},
+	{
+		type = "achievement",
+		name = "let-there-be-light",
+		order = "o",
+		icon = "__Achiever__/graphics/placeholder.png"
+	},
+	{
+		type = "achievement",
+		name = "dedication",
+		order = "s",
+		icon = "__Achiever__/graphics/placeholder.png"
+	},
+	{
+		type = "achievement",
+		name = "maggots",
+		order = "u",
+		icon = "__Achiever__/graphics/placeholder.png"
+	},
+	{
+		type = "achievement",
+		name = "we-didnt-start-the-fire",
+		order = "z",
+		icon = "__Achiever__/graphics/placeholder.png"
+	},
+	{
+		type = "achievement",
+		name = "you-forgot-something",
+		order = "v",
+		icon = "__Achiever__/graphics/placeholder.png"
+	},
 }
