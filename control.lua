@@ -63,7 +63,8 @@ script.on_event(defines.events.on_picked_up_item, onItemPickup)
 
 function onResourceDepleted(e)
 	local entity = e.entity.surface.find_entities_filtered{type="mining-drill", position = e.entity.position}
-	for index, player in pairs(entity.force.players) do
+	if not entity then return end
+	for index, player in pairs(entity[1].force.players) do
 		player.unlock_achievement("depleted")
 	end
 end
