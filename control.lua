@@ -1,3 +1,4 @@
+--[[
 function enableTesting(event)
 	game.players[event.player_index].cheat_mode = true
 	game.players[event.player_index].force.research_all_technologies()
@@ -34,12 +35,12 @@ function onEntityDied(e)
 	--Friendly fire - destroy your own building
 	if cause and cause.type == "player" and entity.force == causeForce and entity.has_flag("player-creation") then
 		cause.player.unlock_achievement("friendly-fire")
-	--tango down - have a turret kill a biter
+		--tango down - have a turret kill a biter
 	elseif cause and causeForce and cause.name == "gun-turret" and entity.type == "unit" then
 		for index, player in pairs(causeForce.players) do
 			player.unlock_achievement("tango-down")
 		end
-	-- Deforestation
+		-- Deforestation
 	elseif entity.type == "tree" then
 		treeDestroyed(e)
 	end
@@ -136,6 +137,13 @@ function onTick(e)
 		if game.surfaces[1].count_entities_filtered{name = "solar-panel"} >= 10000 then
 			for index, player in pairs(game.players) do
 				player.unlock_achievement("praise-the-sun")
+			end
+		end
+	end
+	if e.tick % 16000 == 0 then
+		if game.surfaces[1].count_entities_filtered{type = "transport-belt"} >= 10000 then
+			for index, player in pairs(game.players) do
+				player.unlock_achievement("convey-your-ideas")
 			end
 		end
 	end

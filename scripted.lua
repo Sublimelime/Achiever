@@ -95,4 +95,10 @@ data:extend{
 		order = "t",
 		icon = "__Achiever__/graphics/blueprinted.png"
 	},
+	{
+		type = "achievement",
+		name = "convey-your-ideas",
+		order = "l",
+		icon = "__Achiever__/graphics/convey-your-ideas.png"
+	},
 }
