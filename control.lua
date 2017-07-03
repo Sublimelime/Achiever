@@ -3,11 +3,10 @@ function enableTesting(event)
 	game.players[event.player_index].force.research_all_technologies()
 end
 commands.add_command("testing", "Run to enable testing without disabling achievements", enableTesting)
+--]]
 
 script.on_init(function(e)
 	global.trees_destroyed = 0
-	global.lamps_placed = 0
-	global.solar_panels_placed = 0
 end
 )
 
@@ -15,7 +14,7 @@ function treeDestroyed(e)
 	if e.entity.type == "tree" then
 		global.trees_destroyed = global.trees_destroyed + 1 --increment the number of trees destroyed
 		if global.trees_destroyed >= 100000 then
-			for index, player in pairs(game.players) do
+			for index, player in pairs(game.players) do --give the achievement to every player
 				player.unlock_achievement("deforestation")
 			end
 		end
@@ -35,10 +34,12 @@ function onEntityDied(e)
 	--Friendly fire - destroy your own building
 	if cause and cause.type == "player" and entity.force == causeForce and entity.has_flag("player-creation") then
 		cause.player.unlock_achievement("friendly-fire")
+	--tango down - have a turret kill a biter
 	elseif cause and causeForce and cause.name == "gun-turret" and entity.type == "unit" then
 		for index, player in pairs(causeForce.players) do
 			player.unlock_achievement("tango-down")
 		end
+	-- Deforestation
 	elseif entity.type == "tree" then
 		treeDestroyed(e)
 	end
@@ -47,18 +48,21 @@ script.on_event(defines.events.on_entity_died, onEntityDied)
 
 function onBlueprint(e)
 	local player = game.players[e.player_index]
+	if not player then return end
 	player.unlock_achievement("blueprinted")
 end
 script.on_event(defines.events.on_player_setup_blueprint, onBlueprint)
 
 function onItemPickup(e)
 	local player = game.players[e.player_index]
+	if not player then return end
 	player.unlock_achievement("looted")
 end
 script.on_event(defines.events.on_picked_up_item, onItemPickup)
 
 function onResourceDepleted(e)
-	for index, player in pairs(e.entity.force.players) do
+	local entity = e.entity.surface.find_entities_filtered{type="mining-drill", position = e.entity.position}
+	for index, player in pairs(entity.force.players) do
 		player.unlock_achievement("depleted")
 	end
 end
@@ -123,7 +127,7 @@ end
 script.on_event(defines.events.on_rocket_launched, onRocketLaunched)
 
 function onTick(e)
-	if e.tick % 8000 then
+	if e.tick % 8000 == 0 then
 		if game.surfaces[1].count_entities_filtered{name = "small-lamp"} >= 200 then
 			for index, player in pairs(game.players) do
 				player.unlock_achievement("let-there-be-light")

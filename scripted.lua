@@ -89,4 +89,10 @@ data:extend{
 		order = "k",
 		icon = "__Achiever__/graphics/ghosted.png"
 	},
+	{
+		type = "achievement",
+		name = "blueprinted",
+		order = "t",
+		icon = "__Achiever__/graphics/blueprinted.png"
+	},
 }
