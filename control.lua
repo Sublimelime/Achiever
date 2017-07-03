@@ -7,6 +7,7 @@ commands.add_command("testing", "Run to enable testing without disabling achieve
 script.on_init(function(e)
 	global.trees_destroyed = 0
 	global.lamps_placed = 0
+	global.solar_panels_placed = 0
 end
 )
 
@@ -93,11 +94,20 @@ end
 script.on_event(defines.events.on_player_crafted_item, onPlayerCrafted)
 
 function onPlaced(e)
-	if e.created_entity.name = "lamp" then
+	if e.created_entity.name == "lamp" then
 		global.lamps_placed = global.lamps_placed + 1
 		if global.lamps_placed >= 200 then
 			for index, player in pairs(game.players) do
 				player.unlock_achievement("let-there-be-light")
+			end
+		end
+	elseif e.created_entity.type == "entity-ghost" then
+		game.players[e.player_index].unlock_achievement("ghosted")
+	elseif e.created_entity.name == "solar-panel" then
+		global.solar_panels_placed = global.solar_panels_placed + 1
+		if global.solar_panels_placed >= 200 then
+			for index, player in pairs(game.players) do
+				player.unlock_achievement("praise-the-sun")
 			end
 		end
 	end

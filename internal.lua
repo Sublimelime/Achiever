@@ -92,7 +92,7 @@ data:extend{
 		name = "unending-assault",
 		order = "o",
 		amount = 100,
-		icon = "__Achiever__/graphics/placeholder.png",
+		icon = "__base__/graphics/achievement/it-stinks-and-they-dont-like-it.png",
 	},
 	{
 		type = "produce-per-hour-achievement",
@@ -100,7 +100,7 @@ data:extend{
 		order = "p",
 		item_product = "space-science-pack",
 		amount = 60000,
-		icon = "__Achiever__/graphics/placeholder.png",
+		icon = "__Achiever__/graphics/one-rocket-per-minute.png",
 	},
 	{
 		type = "produce-per-hour-achievement",
@@ -108,7 +108,7 @@ data:extend{
 		order = "p",
 		item_product = "space-science-pack",
 		amount = 120000,
-		icon = "__Achiever__/graphics/placeholder.png",
+		icon = "__Achiever__/graphics/two-rockets-per-minute.png",
 	},
 	{
 		type = "kill-achievement",
@@ -119,6 +119,6 @@ data:extend{
 		in_vehicle = true,
 		personally = true,
 		amount = 500,
-		icon = "__Achiever__/graphics/placeholder.png",
+		icon = "__Achiever__/graphics/bulldozed.png",
 	},
 }

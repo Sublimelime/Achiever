@@ -51,30 +51,42 @@ data:extend{
 		type = "achievement",
 		name = "let-there-be-light",
 		order = "o",
-		icon = "__Achiever__/graphics/placeholder.png"
+		icon = "__Achiever__/graphics/let-there-be-light.png"
+	},
+	{
+		type = "achievement",
+		name = "praise-the-sun",
+		order = "o",
+		icon = "__Achiever__/graphics/praise-the-sun.png"
 	},
 	{
 		type = "achievement",
 		name = "dedication",
 		order = "s",
-		icon = "__Achiever__/graphics/placeholder.png"
+		icon = "__Achiever__/graphics/dedication.png"
 	},
 	{
 		type = "achievement",
 		name = "maggots",
 		order = "u",
-		icon = "__Achiever__/graphics/placeholder.png"
+		icon = "__Achiever__/graphics/maggots.png"
 	},
 	{
 		type = "achievement",
 		name = "we-didnt-start-the-fire",
 		order = "z",
-		icon = "__Achiever__/graphics/placeholder.png"
+		icon = "__Achiever__/graphics/we-didnt-start-the-fire.png"
 	},
 	{
 		type = "achievement",
 		name = "you-forgot-something",
 		order = "v",
-		icon = "__Achiever__/graphics/placeholder.png"
+		icon = "__Achiever__/graphics/you-forgot-something.png"
+	},
+	{
+		type = "achievement",
+		name = "ghosted",
+		order = "k",
+		icon = "__Achiever__/graphics/ghosted.png"
 	},
 }
