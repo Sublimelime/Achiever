@@ -128,7 +128,7 @@ data:extend{
 		item_product = "iron-gear-wheel",
 		amount = 10000,
 		limited_to_one_game = false,
-		icon = "__Achiever__/graphics/placeholder.png",
+		icon = "__Achiever__/graphics/gear-production-1.png",
 	},
 	{
 		type = "produce-achievement",
@@ -137,7 +137,7 @@ data:extend{
 		item_product = "iron-gear-wheel",
 		amount = 1000000,
 		limited_to_one_game = false,
-		icon = "__Achiever__/graphics/placeholder.png",
+		icon = "__Achiever__/graphics/gear-production-2.png",
 	},
 	{
 		type = "produce-achievement",
@@ -146,7 +146,7 @@ data:extend{
 		item_product = "iron-gear-wheel",
 		amount = 20000000,
 		limited_to_one_game = false,
-		icon = "__Achiever__/graphics/placeholder.png",
+		icon = "__Achiever__/graphics/gear-production-3.png",
 	},
 	{
 		type = "dont-use-entity-in-energy-production-achievement",
@@ -156,6 +156,6 @@ data:extend{
 		excluded = "solar-panel",
 		included = {"steam-turbine", "steam-engine"},
 		minimum_energy_produced = "10GJ",
-		icon = "__Achiever__/graphics/placeholder.png",
+		icon = "__Achiever__/graphics/steampunk.png",
 	},
 }

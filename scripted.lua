@@ -105,6 +105,6 @@ data:extend{
 		type = "achievement",
 		name = "well-balanced",
 		order = "l",
-		icon = "__Achiever__/graphics/placeholder.png"
+		icon = "__Achiever__/graphics/well-balanced.png"
 	},
 }
