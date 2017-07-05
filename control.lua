@@ -51,6 +51,9 @@ function onBlueprint(e)
 	local player = game.players[e.player_index]
 	if not player then return end
 	player.unlock_achievement("blueprinted")
+	if player.surface.count_entities_filtered{type = "splitter", area = e.area} >= 10 then
+		player.unlock_achievement("well-balanced")
+	end
 end
 script.on_event(defines.events.on_player_setup_blueprint, onBlueprint)
 
@@ -63,7 +66,7 @@ script.on_event(defines.events.on_picked_up_item, onItemPickup)
 
 function onResourceDepleted(e)
 	local entity = e.entity.surface.find_entities_filtered{type="mining-drill", position = e.entity.position}
-	if not entity then return end
+	if not entity or not entity[1] then return end
 	for index, player in pairs(entity[1].force.players) do
 		player.unlock_achievement("depleted")
 	end

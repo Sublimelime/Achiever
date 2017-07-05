@@ -101,4 +101,9 @@ data:extend{
 		order = "l",
 		icon = "__Achiever__/graphics/convey-your-ideas.png"
 	},
+		type = "achievement",
+		name = "well-balanced",
+		order = "l",
+		icon = "__Achiever__/graphics/placeholder.png"
+	},
 }
