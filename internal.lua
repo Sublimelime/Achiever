@@ -121,4 +121,41 @@ data:extend{
 		amount = 500,
 		icon = "__base__/graphics/achievement/run-forrest-run.png"
 	},
+	{
+		type = "produce-achievement",
+		name = "gear-production-1",
+		order = "u",
+		item_product = "iron-gear-wheel",
+		amount = 10000,
+		limited_to_one_game = false
+		icon = "__Achiever__/graphics/placeholder.png",
+	},
+	{
+		type = "produce-achievement",
+		name = "gear-production-2",
+		order = "u",
+		item_product = "iron-gear-wheel",
+		amount = 1000000,
+		limited_to_one_game = false
+		icon = "__Achiever__/graphics/placeholder.png",
+	},
+	{
+		type = "produce-achievement",
+		name = "gear-production-3",
+		order = "u",
+		item_product = "iron-gear-wheel",
+		amount = 20000000,
+		limited_to_one_game = false
+		icon = "__Achiever__/graphics/placeholder.png",
+	},
+	{
+		type = "dont-use-entity-in-energy-production-achievement",
+		name = "steampunk",
+		order = "i",
+		last_hour_only = true,
+		excluded = "solar-panel",
+		included = {"steam-turbine", "steam-engine"},
+		minimum_energy_produced = "10GJ",
+		icon = "__Achiever__/graphics/placeholder.png",
+	},
 }
