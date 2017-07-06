@@ -11,7 +11,7 @@ data:extend{
 		type = "research-achievement",
 		name = "domo-arigato-mr-roboto",
 		order = "h",
-		technology = "modular-roboports-1",
+		technology = "bob-robo-modular-1",
 		icon = "__Achiever__/graphics/placeholder.png",
 	},
 	{
