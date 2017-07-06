@@ -2,7 +2,6 @@ require("internal")
 require("scripted")
 
 --Check if bob's mods are installed
-if someCondition then
-	require("bobsInternal")
-	require("bobsScripted")
+if data.raw["underground-belt"]["green-underground-belt"] ~= nil then --bob's logistics installed
+	require("externalmoddefs.bobsLogistics")
 end

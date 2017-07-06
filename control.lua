@@ -1,12 +1,10 @@
-require("bobsAchievements")
+require("bobsLogistics")
 
---[[
 function enableTesting(event)
 	game.players[event.player_index].cheat_mode = true
 	game.players[event.player_index].force.research_all_technologies()
 end
 commands.add_command("testing", "Run to enable testing without disabling achievements", enableTesting)
---]]
 
 script.on_init(function(e)
 	global.trees_destroyed = 0
