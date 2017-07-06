@@ -1,3 +1,5 @@
+require("bobsAchievements")
+
 --[[
 function enableTesting(event)
 	game.players[event.player_index].cheat_mode = true
