@@ -18,10 +18,13 @@ onResourceDepleted	control.lua	/^function onResourceDepleted(e)$/;"	f
 onRocketLaunched	control.lua	/^function onRocketLaunched(event)$/;"	f
 onSettingsPasted	control.lua	/^function onSettingsPasted(e)$/;"	f
 onTick	control.lua	/^function onTick(e)$/;"	f
-s:l	Session.vim	/^let s:l = 32 - ((31 * winheight(0) + 11) \/ 22)$/;"	v
-s:l	Session.vim	/^let s:l = 5 - ((4 * winheight(0) + 11) \/ 22)$/;"	v
-s:l	Session.vim	/^let s:l = 8 - ((7 * winheight(0) + 22) \/ 45)$/;"	v
-s:l	Session.vim	/^let s:l = 81 - ((80 * winheight(0) + 11) \/ 22)$/;"	v
+s:l	Session.vim	/^let s:l = 1 - ((0 * winheight(0) + 12) \/ 24)$/;"	v
+s:l	Session.vim	/^let s:l = 2 - ((1 * winheight(0) + 10) \/ 21)$/;"	v
+s:l	Session.vim	/^let s:l = 2 - ((1 * winheight(0) + 9) \/ 18)$/;"	v
+s:l	Session.vim	/^let s:l = 32 - ((31 * winheight(0) + 16) \/ 33)$/;"	v
+s:l	Session.vim	/^let s:l = 4 - ((1 * winheight(0) + 4) \/ 9)$/;"	v
+s:l	Session.vim	/^let s:l = 58 - ((22 * winheight(0) + 10) \/ 21)$/;"	v
+s:l	Session.vim	/^let s:l = 6 - ((5 * winheight(0) + 21) \/ 43)$/;"	v
 s:so_save	Session.vim	/^let s:so_save = &so | let s:siso_save = &siso | set so=0 siso=0$/;"	v
 s:sx	Session.vim	/^let s:sx = expand("<sfile>:p:r")."x.vim"$/;"	v
 s:wipebuf	Session.vim	/^  let s:wipebuf = bufnr('%')$/;"	v
