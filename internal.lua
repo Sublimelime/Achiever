@@ -163,17 +163,17 @@ data:extend{
 data:extend{
 	{
 		type = "dont-build-entity-achievement",
-		name = "anti-duplication",
+		name = "the-olden-days",
 		order = "o",
-		dont_build = "entity-ghost",
+		dont_build = "fluid-wagon",
 		allowed_in_peaceful_mode = true,
 		icon = "__Achiever__/graphics/placeholder.png"
 	},
 	{
 		type = "dont-build-entity-achievement",
-		name = "the-olden-days",
-		order = "o",
-		dont_build = "fluid-wagon",
+		name = "trains-are-too-hard",
+		order = "t",
+		dont_build = "straight-rail",
 		allowed_in_peaceful_mode = true,
 		icon = "__Achiever__/graphics/placeholder.png"
 	},
