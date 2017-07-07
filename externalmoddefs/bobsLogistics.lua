@@ -16,17 +16,26 @@ data:extend{
 	},
 	{
 		type = "build-entity-achievement",
-		name = "valve-time",
+		name = "belting-around-at-the-speed-of-sound",
 		order = "i",
-		to_build = "bob-valve",
+		to_build = "purple-transport-belt",
 		icon = "__Achiever__/graphics/placeholder.png",
 	},
 	{
-		type = "build-entity-achievement",
-		name = "expand-your-horizons",
-		order = "i",
-		to_build = "bob-logistic-zone-expander",
+		type = "research-achievement",
+		name = "logistical-transcendence",
+		order = "h",
+		technology = "bob-robots-3",
 		icon = "__Achiever__/graphics/placeholder.png",
+	},
+	{
+		type = "produce-achievement",
+		name = "level-up-bots",
+		order = "d",
+		item_product = "bob-logistic-robot-4",
+		amount = 1,
+		icon = "__Achiever__/graphics/placeholder.png",
+		limited_to_one_game = true,
 	},
 }
 

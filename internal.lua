@@ -159,3 +159,22 @@ data:extend{
 		icon = "__Achiever__/graphics/steampunk.png",
 	},
 }
+
+data:extend{
+	{
+		type = "dont-build-entity-achievement",
+		name = "anti-duplication",
+		order = "o",
+		dont_build = "entity-ghost",
+		allowed_in_peaceful_mode = true,
+		icon = "__Achiever__/graphics/placeholder.png"
+	},
+	{
+		type = "dont-build-entity-achievement",
+		name = "the-olden-days",
+		order = "o",
+		dont_build = "fluid-wagon",
+		allowed_in_peaceful_mode = true,
+		icon = "__Achiever__/graphics/placeholder.png"
+	},
+}
