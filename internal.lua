@@ -167,7 +167,7 @@ data:extend{
 		order = "o",
 		dont_build = "fluid-wagon",
 		allowed_in_peaceful_mode = true,
-		icon = "__Achiever__/graphics/placeholder.png"
+		icon = "__Achiever__/graphics/the-olden-days.png"
 	},
 	{
 		type = "dont-build-entity-achievement",
@@ -175,6 +175,6 @@ data:extend{
 		order = "t",
 		dont_build = "straight-rail",
 		allowed_in_peaceful_mode = true,
-		icon = "__Achiever__/graphics/placeholder.png"
+		icon = "__Achiever__/graphics/trains-are-too-hard.png"
 	},
 }

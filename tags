@@ -7,6 +7,7 @@
 0	Session.vim	/^normal! 0$/;"	m
 SessionLoad	Session.vim	/^let SessionLoad = 1$/;"	v
 enableTesting	control.lua	/^function enableTesting(event)$/;"	f
+isZeroSizeArea	control.lua	/^function isZeroSizeArea(area)$/;"	f
 onBlueprint	control.lua	/^function onBlueprint(e)$/;"	f
 onConsoleChat	control.lua	/^function onConsoleChat(e)$/;"	f
 onEntityDied	control.lua	/^function onEntityDied(e)$/;"	f

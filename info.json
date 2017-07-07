@@ -7,5 +7,5 @@
     "homepage": "https://bitbucket.com/Gangsir/achiever",
     "factorio_version": "0.15",
     "dependencies": ["base >= 0.15.27", "? boblogistics"],
-    "description": "Adds many more achievements for players that feel there aren't enough, ranging from progression based to difficult. When used with Bob's/Angel's mods, adds some achievements for them."
+    "description": "Adds many more achievements for players that feel there aren't enough, ranging from progression based to difficult. When used with Bob's/Angel's mods, it adds some achievements for them. See the mod portal for a full list."
 }
