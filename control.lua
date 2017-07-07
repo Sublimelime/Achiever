@@ -47,11 +47,16 @@ function onEntityDied(e)
 end
 script.on_event(defines.events.on_entity_died, onEntityDied)
 
+-- Determines if the area provided is a zero size area.
+function isZeroSizeArea(area)
+	return (area.left_top.x == area.right_bottom.x) and (area.left_top.y == area.right_bottom.y)
+end
+
 function onBlueprint(e)
 	local player = game.players[e.player_index]
 	if not player then return end
 	player.unlock_achievement("blueprinted")
-	if player.surface.count_entities_filtered{type = "splitter", area = e.area} >= 10 then
+	if not isZeroSizeArea(e.area) and player.surface.count_entities_filtered{type = "splitter", area = e.area} >= 10 then
 		player.unlock_achievement("well-balanced")
 	end
 end
