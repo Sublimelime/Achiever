@@ -155,7 +155,7 @@ data:extend{
 		last_hour_only = true,
 		excluded = "solar-panel",
 		included = {"steam-turbine", "steam-engine"},
-		minimum_energy_produced = "10GJ",
+		minimum_energy_produced = "200GJ",
 		icon = "__Achiever__/graphics/steampunk.png",
 	},
 }
