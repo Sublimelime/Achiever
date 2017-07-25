@@ -3,7 +3,7 @@
     "version": "0.2.2",
     "title": "Achiever",
     "author": "Gangsir",
-    "contact": "The best way to reach me is to PM me on Reddit, at /u/Gangsir. If you need to submit an issue with the mod, please do so on the bitbucket repository.",
+    "contact": "PM me on Reddit, at /u/Gangsir. To submit an issue, please submit it at the mod's homepage.",
     "homepage": "https://bitbucket.com/Gangsir/achiever",
     "factorio_version": "0.15",
     "dependencies": ["base >= 0.15.27", "? boblogistics"],
