@@ -1,4 +1,5 @@
 
+--[[
 function enableTesting(event)
 	local player = game.players[event.player_index]
 	if player.name ~= "Gangsir" then --safeguard, just in case I forget to comment this out
@@ -9,6 +10,7 @@ function enableTesting(event)
 	end
 end
 commands.add_command("achieverTesting", "Run to enable testing of achiever without disabling achievements.", enableTesting)
+--]]
 
 script.on_init(function(e)
 	global.trees_destroyed = 0

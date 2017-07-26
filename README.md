@@ -51,6 +51,17 @@ Achiever is a mod for factorio that adds in a large amount of achievements, rang
 * Logistical Transcendence : Research advanced logistics and construction robotics 3.
 * Level up bots! : Construct a logistic robot MK4.
 
-## With Bob's Assembling Machines
+## With Bob's assembling machines
+
+* Flash Crafter : Craft and place an assembling machine tier 6.
+* A refined taste : Craft and place an oil refinery tier 4.
+* We have chemistry! : Craft and place a chemical plant tier 4.
+* What if we could craft even faster? : Research automation 4.
 
 ## With Bob's Mining
+
+* Mining the area : Construct an area mining drill tier 1.
+* No ore's land : Construct an area mining drill tier 4, ready to empty the land of ores.
+* Can I AXE you a question? : Craft a diamond axe. Get chopping.
+* Ultiminer : Build a mining drill tier 4.
+* Pumped up! : Build a tier 4 pumpjack.
