@@ -52,3 +52,5 @@ Achiever is a mod for factorio that adds in a large amount of achievements, rang
 * Level up bots! : Construct a logistic robot MK4.
 
 ## With Bob's Assembling Machines
+
+## With Bob's Mining
