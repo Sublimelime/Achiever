@@ -6,6 +6,6 @@
     "contact": "PM me on Reddit, at /u/Gangsir. To submit an issue, please submit it at the mod's homepage.",
     "homepage": "https://bitbucket.com/Gangsir/achiever",
     "factorio_version": "0.15",
-    "dependencies": ["base >= 0.15.27", "? boblogistics"],
+    "dependencies": ["base >= 0.15.27", "? boblogistics", "? bobassembly"],
     "description": "Adds many more achievements for players that feel there aren't enough, ranging from progression based to difficult. When used with Bob's mods, it adds some achievements for them. See the mod portal for a full list."
 }
