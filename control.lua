@@ -1,4 +1,3 @@
-require("bobsLogistics")
 
 function enableTesting(event)
 	local player = game.players[event.player_index]

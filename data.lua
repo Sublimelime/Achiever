@@ -5,3 +5,7 @@ require("scripted")
 if data.raw["storage-tank"]["bob-valve"] ~= nil then --bob's logistics installed
 	require("externalmoddefs.bobsLogistics")
 end
+
+if data.raw["item-subgroup"]["bob-assembly-machine"] ~= nil then -- Bob's assembling machines installed
+	require("externalmoddefs.bobsAssemblingMachines")
+end
