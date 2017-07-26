@@ -50,3 +50,5 @@ Achiever is a mod for factorio that adds in a large amount of achievements, rang
 * Belting around at the speed of sound : Place an extremely fast transport belt. (Purple tier)
 * Logistical Transcendence : Research advanced logistics and construction robotics 3.
 * Level up bots! : Construct a logistic robot MK4.
+
+## With Bob's Assembling Machines

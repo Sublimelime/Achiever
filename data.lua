@@ -9,3 +9,7 @@ end
 if data.raw["item-subgroup"]["bob-assembly-machine"] ~= nil then -- Bob's assembling machines installed
 	require("externalmoddefs.bobsAssemblingMachines")
 end
+
+if data.raw[""][""] ~= nil then -- Bob's mining installed
+	require("externalmoddefs.bobsMining")
+end
