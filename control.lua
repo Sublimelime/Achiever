@@ -39,7 +39,9 @@ function onEntityDied(e)
 	local causeForceName = causeForce.name or "None"
 
 	--Friendly fire - destroy your own building
-	if cause and cause.type == "player" and entity.force == causeForce and entity.has_flag("player-creation") then
+	if cause and causeForce and cause.type == "player"
+		and entity.force == causeForce and entity.has_flag("player-creation") then
+
 		cause.player.unlock_achievement("friendly-fire")
 		--tango down - have a turret kill a biter
 	elseif cause and causeForce and cause.name == "gun-turret" and entity.type == "unit" then
