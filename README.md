@@ -1,6 +1,8 @@
 # Achiever
 Achiever is a mod for factorio that adds in a large amount of achievements, ranging from simple progression based ones, to ones that will give hours of challenge, like managing to make a base that launches one rocket per minute.
 
+It also adds achievements for certain mods when installed. This support for extra mods, as well as achievements added for vanilla, can be disabled in the mod's settings.
+
 ## List of all added achievements:
 
 * Crafting manually is too slow! : Place your first assembling machine.
