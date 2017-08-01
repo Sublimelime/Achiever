@@ -15,3 +15,7 @@ end
 if settings.startup["achiever-bob-mining-support"].value == true and data.raw.item["bob-area-mining-drill-1"] ~= nil then -- Bob's mining installed
 	require("externalmoddefs.bobsMining")
 end
+
+if settings.startup["achiever-angels-refining-support"].value == true and data.raw[""][""] ~= nil then -- Angel's refining installed
+	require("externalmoddefs.angelsRefining")
+end

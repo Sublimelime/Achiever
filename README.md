@@ -67,3 +67,6 @@ It also adds achievements for certain mods when installed. This support for extr
 * Can I AXE you a question? : Craft a diamond axe. Get chopping.
 * Ultiminer : Build a mining drill tier 4.
 * Pumped up! : Build a tier 4 pumpjack.
+
+
+## With Angel's Refining

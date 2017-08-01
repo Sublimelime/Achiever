@@ -27,4 +27,11 @@ data:extend{
 		default_value = true,
 		per_user = false,
 	},
+	{
+		type = "bool-setting",
+		name = "achiever-angels-refining-support",
+		setting_type = "startup",
+		default_value = true,
+		per_user = false,
+	},
 }
