@@ -44,7 +44,7 @@ data:extend{
         name = "sticky-boots",
         order = "d",
         item_product = "belt-immunity-equipment",
-        icon = "__MoreAchievements__/graphics/placeholder.png",
+        icon = "__MoreAchievements__/graphics/sticky-boots.png",
         limited_to_one_game=false,
         amount=1,
         icon_size = 128
@@ -72,7 +72,7 @@ data:extend{
         name = "gatekeeping",
         order = "e",
         to_build = "gate",
-        icon = "__MoreAchievements__/graphics/placeholder.png",
+        icon = "__MoreAchievements__/graphics/gatekeeping.png",
         icon_size = 128,
     },
     {
@@ -208,6 +208,33 @@ data:extend{
     },
     {
         type = "produce-per-hour-achievement",
+        name = "apprentice-metalsmith",
+        order = "p",
+        item_product = "steel-plate",
+        amount = 5000,
+        icon = "__MoreAchievements__/graphics/placeholder.png",
+        icon_size = 128
+    },
+    {
+        type = "produce-per-hour-achievement",
+        name = "journeyman-metalsmith",
+        order = "p",
+        item_product = "steel-plate",
+        amount = 15000,
+        icon = "__MoreAchievements__/graphics/placeholder.png",
+        icon_size = 128
+    },
+    {
+        type = "produce-per-hour-achievement",
+        name = "master-metalsmith",
+        order = "p",
+        item_product = "steel-plate",
+        amount = 25000,
+        icon = "__MoreAchievements__/graphics/placeholder.png",
+        icon_size = 128
+    },
+    {
+        type = "produce-per-hour-achievement",
         name = "two-rockets-per-minute",
         order = "p",
         item_product = "space-science-pack",
@@ -278,6 +305,15 @@ data:extend{
         dont_build = "fluid-wagon",
         allowed_in_peaceful_mode = true,
         icon = "__MoreAchievements__/graphics/the-olden-days.png",
+        icon_size = 128
+    },
+    {
+        type = "dont-build-entity-achievement",
+        name = "wall-of-guns",
+        order = "o",
+        dont_build = "stone-wall",
+        allowed_in_peaceful_mode = false,
+        icon = "__MoreAchievements__/graphics/placeholder.png",
         icon_size = 128
     },
     {
