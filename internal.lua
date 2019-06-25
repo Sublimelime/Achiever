@@ -80,7 +80,7 @@ data:extend{
         name = "encampment",
         order = "e",
         to_build = "stone-wall",
-        icon = "__MoreAchievements__/graphics/placeholder.png",
+        icon = "__MoreAchievements__/graphics/encampment.png",
         icon_size = 128,
         amount=100,
         limited_to_one_game=true
@@ -90,7 +90,7 @@ data:extend{
         name = "fortress",
         order = "e",
         to_build = "stone-wall",
-        icon = "__MoreAchievements__/graphics/placeholder.png",
+        icon = "__MoreAchievements__/graphics/fortress.png",
         icon_size = 128,
         limited_to_one_game=true,
         amount=500
@@ -100,7 +100,7 @@ data:extend{
         name = "castle",
         order = "e",
         to_build = "stone-wall",
-        icon = "__MoreAchievements__/graphics/placeholder.png",
+        icon = "__MoreAchievements__/graphics/castle.png",
         icon_size = 128,
         limited_to_one_game=true,
         amount=1000
@@ -118,7 +118,7 @@ data:extend{
         name = "buildin-a-sentry",
         order = "e",
         to_build = "gun-turret",
-        icon = "__MoreAchievements__/graphics/placeholder.png",
+        icon = "__MoreAchievements__/graphics/buildin-a-sentry.png",
         icon_size = 128
     },
     {
@@ -126,7 +126,7 @@ data:extend{
         name = "laser-beams",
         order = "e",
         to_build = "laser-turret",
-        icon = "__MoreAchievements__/graphics/placeholder.png",
+        icon = "__MoreAchievements__/graphics/laser-beams.png",
         icon_size = 128
     },
     {
@@ -134,7 +134,7 @@ data:extend{
         name = "kill-it-with-fire",
         order = "e",
         to_build = "flamethrower-turret",
-        icon = "__MoreAchievements__/graphics/placeholder.png",
+        icon = "__MoreAchievements__/graphics/kill-it-with-fire.png",
         icon_size = 128
     },
     {
@@ -207,30 +207,33 @@ data:extend{
         icon_size = 128
     },
     {
-        type = "produce-per-hour-achievement",
+        type = "produce-achievement",
         name = "apprentice-metalsmith",
         order = "p",
         item_product = "steel-plate",
-        amount = 5000,
-        icon = "__MoreAchievements__/graphics/placeholder.png",
+        amount = 10000,
+        limited_to_one_game = false,
+        icon = "__MoreAchievements__/graphics/apprentice-metalsmith.png",
         icon_size = 128
     },
     {
-        type = "produce-per-hour-achievement",
+        type = "produce-achievement",
         name = "journeyman-metalsmith",
         order = "p",
         item_product = "steel-plate",
-        amount = 15000,
-        icon = "__MoreAchievements__/graphics/placeholder.png",
+        amount = 50000,
+        limited_to_one_game = false,
+        icon = "__MoreAchievements__/graphics/journeyman-metalsmith.png",
         icon_size = 128
     },
     {
-        type = "produce-per-hour-achievement",
+        type = "produce-achievement",
         name = "master-metalsmith",
         order = "p",
+        limited_to_one_game = false,
         item_product = "steel-plate",
-        amount = 25000,
-        icon = "__MoreAchievements__/graphics/placeholder.png",
+        amount = 150000,
+        icon = "__MoreAchievements__/graphics/master-metalsmith.png",
         icon_size = 128
     },
     {
@@ -313,7 +316,7 @@ data:extend{
         order = "o",
         dont_build = "stone-wall",
         allowed_in_peaceful_mode = false,
-        icon = "__MoreAchievements__/graphics/placeholder.png",
+        icon = "__MoreAchievements__/graphics/wall-of-guns.png",
         icon_size = 128
     },
     {
