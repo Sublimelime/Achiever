@@ -19,6 +19,28 @@ data:extend{
         icon_size = 128
     },
     {
+        type = "kill-achievement",
+        name = "apprentice-slayer",
+        order = "b",
+        type_to_kill = "unit",
+        in_vehicle = false,
+        personally = false,
+        amount = 1000,
+        icon = "__MoreAchievements__/graphics/apprentice-slayer.png",
+        icon_size = 128
+    },
+    {
+        type = "kill-achievement",
+        name = "slayer-of-worlds",
+        order = "b",
+        type_to_kill = "unit",
+        in_vehicle = false,
+        personally = false,
+        amount = 25000,
+        icon = "__MoreAchievements__/graphics/slayer-of-worlds.png",
+        icon_size = 128
+    },
+    {
         type = "player-damaged-achievement",
         name = "bitten",
         order = "c",
