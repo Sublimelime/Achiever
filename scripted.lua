@@ -8,6 +8,13 @@ data:extend{
     },
     {
         type = "achievement",
+        name = "turret-creeper",
+        order = "g",
+        icon = "__MoreAchievements__/graphics/placeholder.png",
+        icon_size = 128
+    },
+    {
+        type = "achievement",
         name = "im-melting",
         order = "g",
         icon = "__MoreAchievements__/graphics/placeholder.png",

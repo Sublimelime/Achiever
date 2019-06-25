@@ -19,24 +19,49 @@ script.on_event(defines.events.on_robot_pre_mined, treeDestroyed)
 function onEntityDied(e)
     local entity = e.entity
     local cause = e.cause
-    if not cause then return end
-    local causeName = cause.name or "None"
     local causeForce = e.force
-    local causeForceName = causeForce.name or "None"
 
     --Friendly fire - destroy your own building
-    if cause and causeForce and cause.type == "player"
-        and entity.force == causeForce and entity.has_flag("player-creation") then
-
+    if cause and causeForce and cause.type == "character" and entity.force == causeForce then
         cause.player.unlock_achievement("friendly-fire")
         --tango down - have a turret kill a biter
     elseif cause and causeForce and cause.name == "gun-turret" and entity.type == "unit" then
         for index, player in pairs(causeForce.players) do
             player.unlock_achievement("tango-down")
         end
+        -- Homewrecker
+    elseif cause and causeForce and cause.type == "character" and entity.type == "unit-spawner" then
+        for index, player in pairs(causeForce.players) do
+            player.unlock_achievement("homewrecker")
+        end
+        -- Turret creeper
+    elseif cause and causeForce and cause.type:find("turret") and entity.type == "unit-spawner" then
+        game.print("turret creeper")
+        for index, player in pairs(cause.force.players) do
+            player.unlock_achievement("turret-creeper")
+        end
+        -- Shot down
+    elseif cause and causeForce and cause.type == "unit" and (entity.type == "construction-robot" or entity.type == "logistic-robot") then
+        for index, player in pairs(entity.force.players) do
+            player.unlock_achievement("shot-down")
+        end
         -- Deforestation
     elseif entity.type == "tree" then
         treeDestroyed(e)
+
+        -- If you build it they will destroy it
+    elseif cause and causeForce and cause.type == "unit" and entity.has_flag("player-creation") then
+        for index, player in pairs(entity.force.players) do
+            for index, player in pairs(entity.force.players) do
+                player.unlock_achievement("if-you-build-it-they-will-destroy-it")
+            end
+        end
+    elseif not cause and entity.type:find("turret") and entity.has_flag("player-creation") then --god damn it Wube, why you gotta make turrets weird
+        for index, player in pairs(entity.force.players) do
+            for index, player in pairs(entity.force.players) do
+                player.unlock_achievement("if-you-build-it-they-will-destroy-it")
+            end
+        end
     end
 end
 script.on_event(defines.events.on_entity_died, onEntityDied)
@@ -129,8 +154,8 @@ function onRocketLaunched(event)
         for index, player in pairs(force.players) do
             player.unlock_achievement("you-forgot-something")
         end
-  elseif event.rocket.get_item_count("satellite") == 0 and event.rocket.get_item_count("raw-fish") == 0 and event.rocket.get_item_count("car") >= 1 then
-    for index, player in pairs(force.players) do
+    elseif event.rocket.get_item_count("satellite") == 0 and event.rocket.get_item_count("raw-fish") == 0 and event.rocket.get_item_count("car") >= 1 then
+        for index, player in pairs(force.players) do
             player.unlock_achievement("dont-panic")
         end
     end
@@ -159,3 +184,28 @@ function onTick(e)
     end
 end
 script.on_event(defines.events.on_tick, onTick)
+
+-- I'm melting
+script.on_event(defines.events.on_player_died, function(e)
+    local causeEntity = e.cause
+    local player = game.players[e.player_index]
+
+    if causeEntity.name == "small-worm-turret" or causeEntity.name == "medium-worm-turret" or causeEntity.name == "big-worm-turret" then
+        player.unlock_achievement("im-melting")
+    end
+end)
+
+function cliffDestroyed(e)
+    if e.robot then
+        for i, player in pairs(e.robot.force.players) do
+            player.unlock_achievement("terraformer")
+        end
+    else
+        local player = game.players[e.player_index]
+        local capsuleUsed = e.item
+        if capsuleUsed.name == "cliff-explosives" then
+            player.unlock_achievement("terraformer")
+        end
+    end
+end
+script.on_event({defines.events.on_player_used_capsule, defines.events.on_robot_exploded_cliff}, cliffDestroyed)
