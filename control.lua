@@ -8,6 +8,6 @@ function enableTesting(event)
         player.force.research_all_technologies()
     end
 end
-commands.add_command("achieverTesting", "Run to enable testing of achiever without disabling achievements.", enableTesting)
+--commands.add_command("achieverTesting", "Run to enable testing of achiever without disabling achievements.", enableTesting)
 
 require("vanillaScripting")
