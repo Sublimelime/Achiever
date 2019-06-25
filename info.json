@@ -6,6 +6,6 @@
     "contact": "PM me on Reddit, at /u/Gangsir. To submit an issue, please submit it at the mod's homepage.",
     "homepage": "https://gitlab.com/Sudocode/Achiever",
     "factorio_version": "0.17",
-    "dependencies": ["base >= 0.15.27"],
+    "dependencies": ["base >= 0.17.52"],
     "description": "Adds many more achievements for players that feel there aren't enough, ranging from progression based to difficult. Achievements contain references to other games and pop culture. See the mod portal page for a full list, or just open the achievements list once the mod's installed."
 }
