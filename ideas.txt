@@ -1,28 +1,10 @@
-Tactical nuke inbound
-    craft a nuke
 I'm meltinnnngg!
     Die to a worm
 Shot down
     Have a contruction/logistic robot die to an enemy.
-Drop the Bass
-    Build a programmable speaker
-Laser Beams!
-    Build a laser turret
-Napalm
-    Build a flamethrower turret
-Buildin' a sentry!
-    Build a gun turret
 Homewrecker
     Destroy a biter spawner.
 If you build it, they will destroy it
     Lose a building to the enemy.
-Encampment
-    Place 50 walls.
-Fort
-    Place 200 walls.
-Castle
-    Place 500 walls.
-Gatekeeping
-    Place a gate.
 Terraformer
     Destroy a cliff

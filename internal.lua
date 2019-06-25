@@ -33,8 +33,29 @@ data:extend{
         name = "the-essence-of-discovery",
         order = "d",
         item_product = "automation-science-pack",
-        amount = 1,
         icon = "__MoreAchievements__/graphics/the-essence-of-discovery-old.png",
+        icon_size = 128,
+        limited_to_one_game=false,
+        amount=1
+
+    },
+    {
+        type = "produce-achievement",
+        name = "sticky-boots",
+        order = "d",
+        item_product = "belt-immunity-equipment",
+        icon = "__MoreAchievements__/graphics/placeholder.png",
+        limited_to_one_game=false,
+        amount=1,
+        icon_size = 128
+    },
+    {
+        type = "produce-achievement",
+        name = "tactical-nuke-inbound",
+        order = "d",
+        item_product = "atomic-bomb",
+        amount = 1,
+        icon = "__MoreAchievements__/graphics/tactical-nuke-inbound.png",
         limited_to_one_game = true,
         icon_size = 128
     },
@@ -44,6 +65,76 @@ data:extend{
         order = "e",
         to_build = "small-lamp",
         icon = "__MoreAchievements__/graphics/thomas-edison.png",
+        icon_size = 128
+    },
+    {
+        type = "build-entity-achievement",
+        name = "gatekeeping",
+        order = "e",
+        to_build = "gate",
+        icon = "__MoreAchievements__/graphics/placeholder.png",
+        icon_size = 128,
+    },
+    {
+        type = "build-entity-achievement",
+        name = "encampment",
+        order = "e",
+        to_build = "stone-wall",
+        icon = "__MoreAchievements__/graphics/placeholder.png",
+        icon_size = 128,
+        amount=100,
+        limited_to_one_game=true
+    },
+    {
+        type = "build-entity-achievement",
+        name = "fortress",
+        order = "e",
+        to_build = "stone-wall",
+        icon = "__MoreAchievements__/graphics/placeholder.png",
+        icon_size = 128,
+        limited_to_one_game=true,
+        amount=500
+    },
+    {
+        type = "build-entity-achievement",
+        name = "castle",
+        order = "e",
+        to_build = "stone-wall",
+        icon = "__MoreAchievements__/graphics/placeholder.png",
+        icon_size = 128,
+        limited_to_one_game=true,
+        amount=1000
+    },
+    {
+        type = "build-entity-achievement",
+        name = "drop-the-bass",
+        order = "e",
+        to_build = "programmable-speaker",
+        icon = "__MoreAchievements__/graphics/drop-the-bass.png",
+        icon_size = 128
+    },
+    {
+        type = "build-entity-achievement",
+        name = "buildin-a-sentry",
+        order = "e",
+        to_build = "gun-turret",
+        icon = "__MoreAchievements__/graphics/placeholder.png",
+        icon_size = 128
+    },
+    {
+        type = "build-entity-achievement",
+        name = "laser-beams",
+        order = "e",
+        to_build = "laser-turret",
+        icon = "__MoreAchievements__/graphics/placeholder.png",
+        icon_size = 128
+    },
+    {
+        type = "build-entity-achievement",
+        name = "kill-it-with-fire",
+        order = "e",
+        to_build = "flamethrower-turret",
+        icon = "__MoreAchievements__/graphics/placeholder.png",
         icon_size = 128
     },
     {
