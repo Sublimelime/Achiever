@@ -1,21 +1,8 @@
-if settings.startup["achiever-vanilla-achievements-support"].value == true then
-	require("internal")
-	require("scripted")
-end
+require("internal")
+require("scripted")
 
---Check if bob's mods are installed
-if settings.startup["achiever-bob-logistics-support"].value == true and data.raw["storage-tank"]["bob-valve"] ~= nil then --bob's logistics installed
-	require("externalmoddefs.bobsLogistics")
-end
 
-if settings.startup["achiever-bob-assembly-support"].value == true and data.raw["item-subgroup"]["bob-assembly-machine"] ~= nil then -- Bob's assembling machines installed
-	require("externalmoddefs.bobsAssemblingMachines")
-end
+require("externalmoddefs.bobsLogistics")
+require("externalmoddefs.bobsAssemblingMachines")
+require("externalmoddefs.bobsMining")
 
-if settings.startup["achiever-bob-mining-support"].value == true and data.raw.item["bob-area-mining-drill-1"] ~= nil then -- Bob's mining installed
-	require("externalmoddefs.bobsMining")
-end
-
-if settings.startup["achiever-angels-refining-support"].value == true and data.raw[""][""] ~= nil then -- Angel's refining installed
-	require("externalmoddefs.angelsRefining")
-end

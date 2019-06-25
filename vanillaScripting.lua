@@ -81,6 +81,7 @@ end
 script.on_event(defines.events.on_entity_settings_pasted, onSettingsPasted)
 
 function onConsoleChat(e)
+	if not e.player_index then return end
 	local player = game.players[e.player_index]
 	if player then
 		player.unlock_achievement("hello-world")
@@ -107,7 +108,7 @@ function onPlaced(e)
 	end
 end
 script.on_event(defines.events.on_built_entity, onPlaced)
-script.on_event(defines.events.on_robot_built_entity, onPlaced)
+--script.on_event(defines.events.on_robot_built_entity, onPlaced) We don't get a player index here, so we are unable to attribute the achievement to a player
 
 function onResearch(e)
 	local research = e.research
@@ -123,9 +124,13 @@ script.on_event(defines.events.on_research_finished, onResearch)
 function onRocketLaunched(event)
 	local force = event.rocket.force
 	-- if they launch a rocket containing no satellite and no fish
-	if event.rocket.get_item_count("satellite") == 0 and event.rocket.get_item_count("raw-fish") == 0 then
+	if event.rocket.get_item_count("satellite") == 0 and event.rocket.get_item_count("raw-fish") == 0 and event.rocket.get_item_count("car") == 0 then
 		for index, player in pairs(force.players) do
 			player.unlock_achievement("you-forgot-something")
+		end
+  elseif event.rocket.get_item_count("satellite") == 0 and event.rocket.get_item_count("raw-fish") == 0 and event.rocket.get_item_count("car") >= 1 then
+  	for index, player in pairs(force.players) do
+			player.unlock_achievement("dont-panic")
 		end
 	end
 end

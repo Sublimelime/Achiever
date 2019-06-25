@@ -1,7 +1,7 @@
-# Achiever
-Achiever is a mod for factorio that adds in a large amount of achievements, ranging from simple progression based ones, to ones that will give hours of challenge, like managing to make a base that launches one rocket per minute.
+# More Achievements
+More Achievements is a mod for factorio that adds in a large amount of achievements, ranging from simple progression based ones, to ones that will give hours of challenge, like managing to make a base that launches one rocket per minute. The mod was originall ymade by Gangsir and is now maintained by Bilka, with permission.
 
-It also adds achievements for certain mods when installed. This support for extra mods, as well as achievements added for vanilla, can be disabled in the mod's settings.
+It also adds achievements for certain mods when installed.
 
 ## List of all added achievements:
 
@@ -44,6 +44,7 @@ It also adds achievements for certain mods when installed. This support for extr
 * Steampunk : Generate 10GJ of energy per hour with steam only.
 * The olden days... : Win the game without building a fluid wagon.
 * Trains are too hard! : Win the game without building a rail system.
+* Don't panic : Launch your car into space.
 
 ## With Bob's Logistics
 
@@ -67,6 +68,3 @@ It also adds achievements for certain mods when installed. This support for extr
 * Can I AXE you a question? : Craft a diamond axe. Get chopping.
 * Ultiminer : Build a mining drill tier 4.
 * Pumped up! : Build a tier 4 pumpjack.
-
-
-## With Angel's Refining

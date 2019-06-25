@@ -10,8 +10,4 @@ function enableTesting(event)
 end
 commands.add_command("achieverTesting", "Run to enable testing of achiever without disabling achievements.", enableTesting)
 --]]
-
--- Only add scripting if vanilla achievements are enabled
-if settings.startup["achiever-vanilla-achievements-support"].value then
-	require("vanillaScripting")
-end
+require("vanillaScripting")

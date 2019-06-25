@@ -1,11 +1,11 @@
 {
     "name": "Achiever",
-    "version": "0.4.0",
+    "version": "0.5.0",
     "title": "Achiever",
     "author": "Gangsir",
     "contact": "PM me on Reddit, at /u/Gangsir. To submit an issue, please submit it at the mod's homepage.",
-    "homepage": "https://bitbucket.com/Gangsir/achiever",
-    "factorio_version": "0.15",
-    "dependencies": ["base >= 0.15.27", "? boblogistics", "? bobmining", "? bobassembly"],
-    "description": "Adds many more achievements for players that feel there aren't enough, ranging from progression based to difficult. When used with Bob's/Angel's mods, it adds some achievements for them. See the mod portal page for a full list. Individual mod support can be toggled in mod settings."
+    "homepage": "https://gitlab.com/Sudocode/Achiever",
+    "factorio_version": "0.17",
+    "dependencies": ["base >= 0.15.27"],
+    "description": "Adds many more achievements for players that feel there aren't enough, ranging from progression based to difficult. Achievements contain references to other games and pop culture. See the mod portal page for a full list, or just open the achievements list once the mod's installed."
 }
