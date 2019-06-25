@@ -10,42 +10,42 @@ data:extend{
         type = "achievement",
         name = "turret-creeper",
         order = "g",
-        icon = "__MoreAchievements__/graphics/placeholder.png",
+        icon = "__MoreAchievements__/graphics/turret-creeper.png",
         icon_size = 128
     },
     {
         type = "achievement",
         name = "im-melting",
         order = "g",
-        icon = "__MoreAchievements__/graphics/placeholder.png",
+        icon = "__MoreAchievements__/graphics/im-melting.png",
         icon_size = 128
     },
     {
         type = "achievement",
         name = "if-you-build-it-they-will-destroy-it",
         order = "g",
-        icon = "__MoreAchievements__/graphics/placeholder.png",
+        icon = "__MoreAchievements__/graphics/they-will-destroy-it.png",
         icon_size = 128
     },
     {
         type = "achievement",
         name = "terraformer",
         order = "g",
-        icon = "__MoreAchievements__/graphics/placeholder.png",
+        icon = "__MoreAchievements__/graphics/terraformer.png",
         icon_size = 128
     },
     {
         type = "achievement",
         name = "homewrecker",
         order = "g",
-        icon = "__MoreAchievements__/graphics/placeholder.png",
+        icon = "__MoreAchievements__/graphics/homewrecker.png",
         icon_size = 128
     },
     {
         type = "achievement",
         name = "shot-down",
         order = "g",
-        icon = "__MoreAchievements__/graphics/placeholder.png",
+        icon = "__MoreAchievements__/graphics/shot-down.png",
         icon_size = 128
     },
     {
