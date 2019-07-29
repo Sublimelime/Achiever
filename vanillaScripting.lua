@@ -115,8 +115,12 @@ end
 script.on_event(defines.events.on_console_chat, onConsoleChat)
 
 function onPlayerCrafted(e)
+    -- check if this call is valid, as this triggers with cheat mode (for some reason)
+    if not e.item_stack or not e.item_stack.valid then return end
+
     local item = e.item_stack.name
     local player = game.players[e.player_index]
+
     if item == "submachine-gun" then
         player.unlock_achievement("fully-automatic")
     elseif item == "rocket-launcher" then
