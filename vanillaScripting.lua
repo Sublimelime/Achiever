@@ -36,7 +36,6 @@ function onEntityDied(e)
         end
         -- Turret creeper
     elseif cause and causeForce and cause.type:find("turret") and entity.type == "unit-spawner" then
-        game.print("turret creeper")
         for index, player in pairs(cause.force.players) do
             player.unlock_achievement("turret-creeper")
         end
