@@ -191,6 +191,8 @@ script.on_event(defines.events.on_tick, onTick)
 -- I'm melting
 script.on_event(defines.events.on_player_died, function(e)
     local causeEntity = e.cause
+    -- Check for validity, since worm turrets are annoying
+    if not causeEntity then return end
     local player = game.players[e.player_index]
 
     if causeEntity.name == "small-worm-turret" or causeEntity.name == "medium-worm-turret" or causeEntity.name == "big-worm-turret" then
