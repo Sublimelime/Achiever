@@ -59,7 +59,36 @@ data:extend{
         icon_size = 128,
         limited_to_one_game=false,
         amount=1
-
+    },
+    {
+        type = "produce-achievement",
+        name = "speed-to-the-max",
+        order = "d",
+        item_product = "speed-module-3",
+        icon = "__MoreAchievements__/graphics/placeholder.png",
+        icon_size = 128,
+        limited_to_one_game=false,
+        amount=1
+    },
+    {
+        type = "produce-achievement",
+        name = "productive-member-of-society",
+        order = "d",
+        item_product = "productivity-module-3",
+        icon = "__MoreAchievements__/graphics/placeholder.png",
+        icon_size = 128,
+        limited_to_one_game=false,
+        amount=1
+    },
+    {
+        type = "produce-achievement",
+        name = "ecosystem-oriented",
+        order = "d",
+        item_product = "effectivity-module-3",
+        icon = "__MoreAchievements__/graphics/placeholder.png",
+        icon_size = 128,
+        limited_to_one_game=false,
+        amount=1
     },
     {
         type = "produce-achievement",
@@ -334,6 +363,16 @@ data:extend{
     },
     {
         type = "dont-build-entity-achievement",
+        name = "cant-see-nuthin",
+        order = "o",
+        dont_build = "radar",
+        allowed_in_peaceful_mode = true,
+        icon = "__MoreAchievements__/graphics/placeholder.png",
+        icon_size = 128
+    },
+
+    {
+        type = "dont-build-entity-achievement",
         name = "wall-of-guns",
         order = "o",
         dont_build = "stone-wall",
@@ -348,6 +387,14 @@ data:extend{
         dont_build = "straight-rail",
         allowed_in_peaceful_mode = true,
         icon = "__MoreAchievements__/graphics/trains-are-too-hard.png",
+        icon_size = 128
+    },
+    {
+        type = "deliver-by-robots-achievement",
+        name = "slavedriver",
+        amount = 100000,
+        order = "t",
+        icon = "__MoreAchievements__/graphics/placeholder.png",
         icon_size = 128
     },
 }
