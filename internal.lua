@@ -65,7 +65,7 @@ data:extend{
         name = "speed-to-the-max",
         order = "d",
         item_product = "speed-module-3",
-        icon = "__MoreAchievements__/graphics/placeholder.png",
+        icon = "__MoreAchievements__/graphics/speed-to-the-max.png",
         icon_size = 128,
         limited_to_one_game=false,
         amount=1
@@ -75,7 +75,7 @@ data:extend{
         name = "productive-member-of-society",
         order = "d",
         item_product = "productivity-module-3",
-        icon = "__MoreAchievements__/graphics/placeholder.png",
+        icon = "__MoreAchievements__/graphics/productive-member.png",
         icon_size = 128,
         limited_to_one_game=false,
         amount=1
@@ -85,7 +85,7 @@ data:extend{
         name = "ecosystem-oriented",
         order = "d",
         item_product = "effectivity-module-3",
-        icon = "__MoreAchievements__/graphics/placeholder.png",
+        icon = "__MoreAchievements__/graphics/ecosystem-oriented.png",
         icon_size = 128,
         limited_to_one_game=false,
         amount=1
@@ -367,7 +367,7 @@ data:extend{
         order = "o",
         dont_build = "radar",
         allowed_in_peaceful_mode = true,
-        icon = "__MoreAchievements__/graphics/placeholder.png",
+        icon = "__MoreAchievements__/graphics/cant-see-nuthin.png",
         icon_size = 128
     },
 
@@ -394,7 +394,7 @@ data:extend{
         name = "slavedriver",
         amount = 100000,
         order = "t",
-        icon = "__MoreAchievements__/graphics/placeholder.png",
+        icon = "__MoreAchievements__/graphics/slavedriver.png",
         icon_size = 128
     },
 }
