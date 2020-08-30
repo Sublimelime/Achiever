@@ -1,4 +1,16 @@
 ---------------------------------------------------------------------------------------------------
+Version: 0.6.0
+Date: 2020-8-29
+  Features:
+    - Mod updated to 1.0 by Gangsir. Been a while, hasn't it?
+  Added:
+    - Added "Ecosystem oriented" achievement.
+	- Added "Speed to the max" achievement.
+	- Added "Productive member of society" achievement.
+	- Added "Slavedriver" achievement.
+	- Added "Can't see 'nuthin" achievement.
+
+---------------------------------------------------------------------------------------------------
 Version: 0.5.0
 Date: 2019-6-25
   Features:
